@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.colors import LinearSegmentedColormap
 
 def generate_rule30(steps=250, width=501):
     """
@@ -15,7 +16,7 @@ def generate_rule30(steps=250, width=501):
     # Initialize grid with zeros
     grid = np.zeros((steps, width), dtype=int)
     
-    # Set the initial state: single active cell in the middle
+    # Set initial state: single active cell in the middle
     grid[0, width // 2] = 1
 
     # Binary mapping dictionary for Rule 30 transitions
@@ -33,21 +34,28 @@ def generate_rule30(steps=250, width=501):
     return grid
 
 if __name__ == "__main__":
-    # Generate grid with 250 steps for deeper resolution
+    # Generate 250-step high-resolution simulation grid
     grid = generate_rule30(steps=250, width=501)
 
-    # Visualization Setup (Dark Mode & Cyberpunk/Ocean Colormap)
-    plt.style.use('dark_background')
-    fig, ax = plt.subplots(figsize=(12, 8))
+    # Aesthetic Color Palette Setup (Midnight Ocean Theme)
+    bg_color = '#000814'  # Deep Midnight Navy
+    fg_color = '#00f5d4'  # Vibrant Cyan/Turquoise
     
-    # Render with 'cool' colormap for high-contrast neon aesthetics
-    cax = ax.imshow(grid, cmap='cool', interpolation='nearest')
+    # Create custom high-contrast colormap
+    custom_cmap = LinearSegmentedColormap.from_list("midnight_ocean", [bg_color, fg_color])
 
-    # Configure plot title and axes
-    ax.set_title("Rule 30 - Deep Ocean & Cyberpunk Edition", fontsize=14, color='cyan', pad=12)
-    ax.axis('off')  # Hide frame and axes for a clean graphical output
+    # Plot Setup
+    fig, ax = plt.subplots(figsize=(12, 8), facecolor=bg_color)
+    ax.set_facecolor(bg_color)
+    
+    # Render automaton grid
+    ax.imshow(grid, cmap=custom_cmap, interpolation='nearest')
 
-    # Save output image inside the project folder
+    # Figure styling
+    ax.set_title("Rule 30 - Midnight Ocean Visualization", fontsize=14, color=fg_color, pad=14, fontweight='bold')
+    ax.axis('off')  # Remove axes for clean graphical aesthetic
+
+    # Save output image
     output_path = "01-rule-30-cellular-automata/rule_30_ocean_neon.png"
-    plt.savefig(output_path, bbox_inches='tight', dpi=300, facecolor=fig.get_facecolor())
-    print(f"Success: High-resolution visual output saved to {output_path}")
+    plt.savefig(output_path, bbox_inches='tight', dpi=300, facecolor=bg_color)
+    print(f"Success: Aesthetically enhanced output saved to {output_path}")
