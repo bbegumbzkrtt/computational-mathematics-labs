@@ -12,7 +12,7 @@ The primary goal of these projects is to bridge theoretical mathematical concept
 * **Folder:** ['02-monte-carlo-pi-estimation'](./02-monte-carlo-pi-estimation)
 * **Topics:** Probability Theory, Stochastic Simulations, Numerical Integration, Law of Large Numbers.
 * **Tech Stack:** 'Python 3', 'NumPy', 'Matplotlib'.
-* **Summary:** Implementation of Monte Carlo algorithms for probabilistic mathematical estimation. Features stochastic estimation of Pi ($\pi$) via uniform area sampling and numerical integration of trigonometric functions ($f(x)) = \sin(x)$).
+* **Summary:** Implementation of Monte Carlo algorithms for probabilistic mathematical estimation. Features stochastic estimation of Pi ($\pi$) via uniform area sampling and numerical integration of trigonometric functions f(x) = sin(x).
 ---
 ## Mathematical Overview: Rule 30
 
