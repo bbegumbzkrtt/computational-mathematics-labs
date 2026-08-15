@@ -9,7 +9,7 @@ The primary goal of these projects is to bridge theoretical mathematical concept
 *  **Tech Stack:** 'Python 3', 'NumPy', 'Matplotlib'.
 *  **Summary:** Simulation of Stephen Wolfram's **Rule 30** 1D elementary cellular automaton. It demonstrates how estremely simple deterministic transition rules applied to binary states can generate infinitely complex, non-periodic, chaotic patterns.
 ### 02. Monte Carlo Methods
-* **Folder:** ['02-monte-carlo-pi-estimation'](./02-monte-carlo-pi-estimation)
+* **Folder:** ['02-monte-carlo-methods'](./02-monte-carlo-methods)
 * **Topics:** Probability Theory, Stochastic Simulations, Numerical Integration, Law of Large Numbers.
 * **Tech Stack:** 'Python 3', 'NumPy', 'Matplotlib'.
 * **Summary:** Implementation of Monte Carlo algorithms for probabilistic mathematical estimation. Features stochastic estimation of Pi ($\pi$) via uniform area sampling and numerical integration of trigonometric functions f(x) = sin(x).
