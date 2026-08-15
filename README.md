@@ -26,12 +26,18 @@ $$C_i^{t+1} = \text{Rule}(C_{i-1}^t, C_i^t, C_{i+1}^t)$$
 | **$C_i^{t+1}$** | **0** | **0** | **0** | **1** | **1** | **1** | **1** | **0** |
 
 ## Mathematical Overview: Monte Carlo Methods
-### 1. Pi ($\pi$) Estimation
-By inscribing a unit circle ($r=1$) inside a bounding square ($L=2$), $N$ uniform random points are generated over $[-1, 1] \times [-1, 1]$. The ratio of points landing inside the circle approximates the geometric area ratio:
 
-$$\frac{N_{\text{inside}}}{N_{text{total}}} \approx \frac{A_{\text{circle}}}{A_{\text{square}}} = \frac{\pi}{4} \implies \pi \approx 4 \cdot \frac{N_{\text{inside}}}{N_{\text{total}}}$$
+### 1. Pi ($\pi$) Estimation
+By inscribing a unit circle ($r = 1$) inside a bounding square ($L = 2$), $N$ uniform random points are generated over $[-1, 1] \times [-1, 1]$. The ratio of points landing inside the circle approximates the geometric area ratio:
+
+$$\frac{N_{\text{inside}}}{N_{\text{total}}} \approx \frac{A_{\text{circle}}}{A_{\text{square}}} = \frac{\pi}{4} \implies \pi \approx 4 \cdot \frac{N_{\text{inside}}}{N_{\text{total}}}$$
 
 ### 2. Numerical Integration
-Definite integration over a region $[a, b] \times [0, y_{\max}]$ using hit-or-miss probability:
+Definite integration over a region $[a, b] \times [0, y_{\text{max}}]$ using hit-or-miss probability:
 
-$$\int_0^\pi \sin(x) \, dx \approx A_{\text{box}} \cdot \frac{N_{\text{under}}}{N_{\text{total}}} = \pi \cdot \frac{N_{\text{under}}}{N_{\text{total}}}$$
+$$\int_{0}^{\pi} \sin(x) \, dx \approx A_{\text{box}} \cdot \frac{N_{\text{under}}}{N_{\text{total}}} = \pi \cdot \frac{N_{\text{under}}}{N_{\text{total}}}$$
+
+### 3. Non-Elementary Integration (Gaussian Integral)
+Estimating non-elementary integrals where traditional anti-derivatives do not exist (e.g., $f(x) = e^{-x^2}$ over $[0, 1]$):
+
+$$\int_{0}^{1} e^{-x^2} \, dx \approx A_{\text{box}} \cdot \left( \frac{N_{\text{under}} - N_{\text{above}}}{N_{\text{total}}} \right)$$
