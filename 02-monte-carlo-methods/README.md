@@ -68,13 +68,6 @@ $$\int_0^\pi \sin(x) \, dx \approx A_{\text{box}} \cdot \frac{N_{\text{under}}}{
 
 ---
 
-## Tech Stack & Dependencies
-- **Python 3**
-- **NumPy** (Vectorized random sampling)
-- **Matplotlib** (Data visualization)
-
-## 3. Generalized & Non-Elementary Integration (`monte_carlo_integrator.py`)
-
 ### Mathematical Principle
 While simple functions like $\sin(x)$ can be solved analytically, many functions in physics and probability do not possess elementary anti-derivatives. A classic example is the **Gaussian Integral**:
 
@@ -98,3 +91,12 @@ $$\int_{a}^{b} f(x) \, dx \approx A_{\text{box}} \cdot \left( \frac{N_{\text{und
 ![Gaussian Integral Monte Carlo Estimation](assets/monte_carlo_result.png)
 
 </details>
+
+---
+
+## Tech Stack & Dependencies
+- **Python 3**
+- **NumPy** (Vectorized random sampling)
+- **Matplotlib** (Data visualization)
+
+## 3. Generalized & Non-Elementary Integration (`monte_carlo_integrator.py`)
