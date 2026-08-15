@@ -27,7 +27,13 @@ A point satisfies the inside condition if:
 $$x_i^2 + y_i^2 \le 1$$
 
 ### Visualization Output
-![Monte Carlo Pi Estimation](monte_carlo_pi.png)
+
+<details>
+<summary>Click to view simulation plot</summary>
+
+![Monte Carlo Pi Estimation](assets/monte_carlo_pi.png)
+
+</details>
 
 ---
 
@@ -52,7 +58,13 @@ The integral value is estimated as:
 $$\int_0^\pi \sin(x) \, dx \approx A_{\text{box}} \cdot \frac{N_{\text{under}}}{N_{\text{total}}} = \pi \cdot \frac{N_{\text{under}}}{N_{\text{total}}}$$
 
 ### Visualization Output
-![Monte Carlo Integration](monte_carlo_integration.png)
+
+<details>
+<summary>Click to view simulation plot</summary>
+
+![Monte Carlo Integration](assets/monte_carlo_integration.png)
+
+</details>
 
 ---
 
@@ -60,3 +72,29 @@ $$\int_0^\pi \sin(x) \, dx \approx A_{\text{box}} \cdot \frac{N_{\text{under}}}{
 - **Python 3**
 - **NumPy** (Vectorized random sampling)
 - **Matplotlib** (Data visualization)
+
+## 3. Generalized & Non-Elementary Integration (`monte_carlo_integrator.py`)
+
+### Mathematical Principle
+While simple functions like $\sin(x)$ can be solved analytically, many functions in physics and probability do not possess elementary anti-derivatives. A classic example is the **Gaussian Integral**:
+
+$$\int_{0}^{1} e^{-x^2} \, dx$$
+
+Since $e^{-x^2}$ cannot be integrated using standard Calculus techniques (e.g., substitution or integration by parts), numerical simulation via Monte Carlo becomes indispensable.
+
+### Bounding Box Setup & Dynamic Sampling
+For an arbitrary function $f(x)$ evaluated over $[a, b]$:
+- **Bounding Box Area:** $A_{\text{box}} = (b - a) \times (y_{\text{max}} - y_{\text{min}})$
+- **Point Sampling:** Uniformly distributed random coordinates $(x_i, y_i) \in [a, b] \times [y_{\text{min}}, y_{\text{max}}]$.
+- **Monte Carlo Estimation:**
+
+$$\int_{a}^{b} f(x) \, dx \approx A_{\text{box}} \cdot \left( \frac{N_{\text{under}} - N_{\text{above}}}{N_{\text{total}}} \right)$$
+
+### Visualization Output
+
+<details>
+<summary>Click to view simulation plot</summary>
+
+![Gaussian Integral Monte Carlo Estimation](assets/monte_carlo_result.png)
+
+</details>

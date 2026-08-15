@@ -30,5 +30,5 @@ The 8 possible neighborhood configurations and their resulting outcomes for Rule
 
 ## Directory Contents
 
-- `main.py`: Generates the classic monochrome visualization of the automaton (`rule_30_pattern.png`).
-- `generate_ocean_rule30.py`: Renders a high-resolution, multi-step visualization using a custom dark neon theme (`rule_30_ocean_neon.png`).
+- `main.py`: Generates the classic monochrome visualization of the automaton ([assets/rule_30_pattern.png](assets/rule_30_pattern.png)).
+- `generate_ocean_rule30.py`: Renders a high-resolution visualization ([assets/rule_30_ocean_neon.png](assets/rule_30_ocean_neon.png)).
