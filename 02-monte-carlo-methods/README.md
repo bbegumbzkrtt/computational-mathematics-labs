@@ -96,6 +96,28 @@ $$\int_{a}^{b} f(x) \, dx \approx A_{\text{box}} \cdot \left( \frac{N_{\text{und
 
 ---
 
+## 4. Sinc Function Integration (`sinc_integration.py`)
+
+### Mathematical Principle
+Evaluating the non-elementary Sinc integral $\text{Si}(\pi) = \int_{0}^{\pi} \frac{\sin(x)}{x} \, dx$, which exhibits a $\frac{0}{0}$ indeterminate form at $x = 0$ (resolved as $f(0) = 1$):
+
+$$\int_{0}^{\pi} \frac{\sin(x)}{x} \, dx \approx 1.851937$$
+
+### Bounding Box Setup & Sampling
+- **Bounding Box Area:** $A_{\text{box}} = (\pi - 0) \times (1 - 0) = \pi$
+- **Point Sampling:** Uniform random sampling over $[0, \pi] \times [0, 1]$
+
+### Visualization Output
+
+<details>
+<summary>Click to view simulation plot</summary>
+
+![Sinc Integration](assets/sinc_integration.png)
+
+</details>
+
+---
+
 ## Tech Stack & Dependencies
 - **Python 3**
 - **NumPy** (Vectorized random sampling)
