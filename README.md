@@ -41,3 +41,8 @@ $$\int_{0}^{\pi} \sin(x) \, dx \approx A_{\text{box}} \cdot \frac{N_{\text{under
 Estimating non-elementary integrals where traditional anti-derivatives do not exist (e.g., $f(x) = e^{-x^2}$ over $[0, 1]$):
 
 $$\int_{0}^{1} e^{-x^2} \, dx \approx A_{\text{box}} \cdot \left( \frac{N_{\text{under}} - N_{\text{above}}}{N_{\text{total}}} \right)$$
+
+### 4. Sinc Function Integration
+Integrating the non-elementary Sinc function $f(x) = \frac{\sin(x)}{x}$ over $[0, \pi]$, which evaluates the Sine Integral $\text{Si}(\pi)$ despite the $\frac{0}{0}$ indeterminate form at $x = 0$:
+
+$$\int_{0}^{\pi} \frac{\sin(x)}{x} \, dx \approx A_{\text{box}} \cdot \frac{N_{\text{under}}}{N_{\text{total}}} = \pi \cdot \frac{N_{\text{under}}}{N_{\text{total}}} \approx 1.851937$$
