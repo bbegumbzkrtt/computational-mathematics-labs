@@ -13,6 +13,12 @@ The primary goal of these projects is to bridge theoretical mathematical concept
 * **Topics:** Probability Theory, Stochastic Simulations, Numerical Integration, Law of Large Numbers.
 * **Tech Stack:** 'Python 3', 'NumPy', 'Matplotlib'.
 * **Summary:** Implementation of Monte Carlo algorithms for probabilistic mathematical estimation. Features stochastic estimation of Pi ($\pi$) via uniform area sampling and numerical integration of trigonometric functions f(x) = sin(x).
+### 03. Chaos Theory & Lorenz Attractor
+* **Folder:** [`/03-chaos-theory-lorenz-attractor`](./03-chaos-theory-lorenz-attractor)
+* **Topics:** Ordinary Differential Equations, Chaos Theory, Dynamical Systems, Euler Integration.
+* **Tech Stack:** `Python 3`, `NumPy`, `Matplotlib`.
+* **Summary:** Simulation of Edward Lorenz's 3D non-linear atmospheric convection model. Demonstrates deterministic chaos and sensitive dependence on initial conditions (Butterfly Effect) using first-order numerical integration.
+
 ---
 ## Mathematical Overview: Rule 30
 
@@ -41,3 +47,19 @@ $$\int_{0}^{\pi} \sin(x) \, dx \approx A_{\text{box}} \cdot \frac{N_{\text{under
 Estimating non-elementary integrals where traditional anti-derivatives do not exist (e.g., $f(x) = e^{-x^2}$ over $[0, 1]$):
 
 $$\int_{0}^{1} e^{-x^2} \, dx \approx A_{\text{box}} \cdot \left( \frac{N_{\text{under}} - N_{\text{above}}}{N_{\text{total}}} \right)$$
+
+---
+
+## Mathematical Overview: Chaos Theory & Lorenz Attractor
+
+The Lorenz system models 3D chaotic fluid convection through three coupled ordinary differential equations:
+
+$$\frac{dx}{dt} = \sigma (y - x)$$
+
+$$\frac{dy}{dt} = x (\rho - z) - y$$
+
+$$\frac{dz}{dt} = x y - \beta z$$
+
+Trajectory points are iteratively updated via Euler's method with step size $\Delta t$:
+
+$$x_{n+1} = x_n + \left(\sigma (y_n - x_n)\right) \Delta t$$
