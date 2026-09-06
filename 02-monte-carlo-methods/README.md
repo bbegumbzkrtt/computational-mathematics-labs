@@ -5,7 +5,8 @@ This module explores **Monte Carlo simulations**—a class of computational algo
 
 1. **Stochastic Pi ($\pi$) Estimation** (`main.py`)
 2. **Numerical Integration of Trigonometric Functions** (`integration.py`)
-
+3. **Generalized & Non-Elementary Integration (Gaussian Integral)** (`monte_carlo_integrator.py`)
+4. **Sinc Function Integration** (`sinc_integration.py`)
 ---
 
 ## 1. Monte Carlo Pi Estimation (`main.py`)
