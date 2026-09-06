@@ -48,6 +48,11 @@ Estimating non-elementary integrals where traditional anti-derivatives do not ex
 
 $$\int_{0}^{1} e^{-x^2} \, dx \approx A_{\text{box}} \cdot \left( \frac{N_{\text{under}} - N_{\text{above}}}{N_{\text{total}}} \right)$$
 
+### 4. Sinc Function Integration
+Integrating the non-elementary Sinc function $f(x) = \frac{\sin(x)}{x}$ over $[0, \pi]$:
+
+$$\int_{0}^{\pi} \frac{\sin(x)}{x} \, dx \approx A_{\text{box}} \cdot \frac{N_{\text{under}}}{N_{\text{total}}} = \pi \cdot \frac{N_{\text{under}}}{N_{\text{total}}} \approx 1.851937$$
+
 ---
 
 ## Mathematical Overview: Chaos Theory & Lorenz Attractor
