@@ -14,7 +14,7 @@ The primary goal of these projects is to bridge theoretical mathematical concept
 * **Tech Stack:** 'Python 3', 'NumPy', 'Matplotlib'.
 * **Summary:** Implementation of Monte Carlo algorithms for probabilistic mathematical estimation. Features stochastic estimation of Pi ($\pi$) via uniform area sampling and numerical integration of trigonometric functions f(x) = sin(x).
 ### 03. Chaos Theory & Lorenz Attractor
-* **Folder:** [`/03-chaos-theory-lorenz-attractor`](./03-chaos-theory-lorenz-attractor)
+* **Folder:** ['/03-chaos-theory-lorenz-attractor'](./03-chaos-theory-lorenz-attractor)
 * **Topics:** Ordinary Differential Equations, Chaos Theory, Dynamical Systems, Euler Integration.
 * **Tech Stack:** `Python 3`, `NumPy`, `Matplotlib`.
 * **Summary:** Simulation of Edward Lorenz's 3D non-linear atmospheric convection model. Demonstrates deterministic chaos and sensitive dependence on initial conditions (Butterfly Effect) using first-order numerical integration.
