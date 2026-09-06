@@ -72,4 +72,24 @@ $$\frac{dz}{dt} = x y - \beta z$$
 
 Trajectory points are iteratively updated via Euler's method with step size $\Delta t$:
 
-$$x_{n+1} = x_n + \left(\sigma (y_n - x_n)\right) \Delta t$$
+$$x_{n+1} = x_n + \sigma (y_n - x_n) \Delta t$$
+
+$$y_{n+1} = y_n + \left[ x_n (\rho - z_n) - y_n \right] \Delta t$$
+
+$$z_{n+1} = z_n + \left( x_n y_n - \beta z_n \right) \Delta t$$
+
+### Dynamics & Phase Transitions (`parameter_sweep.py`)
+
+Varying the Rayleigh heating parameter $\rho$ induces qualitative regime changes in phase space:
+
+* **$\rho = 14.0$ (Fixed Point Attractor):** Low thermal Rayleigh energy causes trajectories to spiral inward and decay to a stable fixed point.
+* **$\rho = 28.0$ (Chaotic Butterfly Attractor):** The classical chaotic regime characterized by non-periodic orbits around two unstable foci.
+* **$\rho = 99.96$ (Periodic Orbit / Knot):** High energy limits chaotic divergence, forcing trajectories into a deterministic closed loop.
+
+### Sensitivity to Initial Conditions (`butterfly_effect_sensitivity.py`)
+
+To evaluate the **Butterfly Effect**, two trajectories $A(t)$ and $B(t)$ are integrated simultaneously with a micro-perturbation of $\Delta z = 0.0001$:
+
+$$D(t) = \sqrt{(x_A - x_B)^2 + (y_A - y_B)^2 + (z_A - z_B)^2}$$
+
+Positive Lyapunov exponents cause exponential spatial separation over time, illustrating the fundamental unpredictability of deterministic chaotic systems.
