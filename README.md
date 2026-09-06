@@ -6,13 +6,15 @@ The primary goal of these projects is to bridge theoretical mathematical concept
 ### 01. Rule 30 Cellular Automata
 * **Folder:** ['/01-rule-30-cellular-automata'](./01-rule-30-cellular-automata)
 * **Topics:** Discrete Mathematics, Cellular Automata, Deterministic Chaos, Complex Systems.
-*  **Tech Stack:** 'Python 3', 'NumPy', 'Matplotlib'.
+*  **Tech Stack:** `Python 3`, `NumPy`, `Matplotlib`.
 *  **Summary:** Simulation of Stephen Wolfram's **Rule 30** 1D elementary cellular automaton. It demonstrates how estremely simple deterministic transition rules applied to binary states can generate infinitely complex, non-periodic, chaotic patterns.
+
 ### 02. Monte Carlo Methods
 * **Folder:** ['02-monte-carlo-methods'](./02-monte-carlo-methods)
 * **Topics:** Probability Theory, Stochastic Simulations, Numerical Integration, Law of Large Numbers.
-* **Tech Stack:** 'Python 3', 'NumPy', 'Matplotlib'.
+* **Tech Stack:** `Python 3`, `NumPy`, `Matplotlib`.
 * **Summary:** Implementation of Monte Carlo algorithms for probabilistic mathematical estimation. Features stochastic estimation of Pi ($\pi$) via uniform area sampling and numerical integration of trigonometric functions f(x) = sin(x).
+
 ### 03. Chaos Theory & Lorenz Attractor
 * **Folder:** ['/03-chaos-theory-lorenz-attractor'](./03-chaos-theory-lorenz-attractor)
 * **Topics:** Ordinary Differential Equations, Chaos Theory, Dynamical Systems, Euler Integration.
@@ -20,6 +22,7 @@ The primary goal of these projects is to bridge theoretical mathematical concept
 * **Summary:** Simulation of Edward Lorenz's 3D non-linear atmospheric convection model. Demonstrates deterministic chaos and sensitive dependence on initial conditions (Butterfly Effect) using first-order numerical integration.
 
 ---
+
 ## Mathematical Overview: Rule 30
 
 In Rule 30, the state of cell $C_i$ at time step $t+1$ depends strictly on its current state and its left/right neighbors at time $t$:
@@ -30,6 +33,8 @@ $$C_i^{t+1} = \text{Rule}(C_{i-1}^t, C_i^t, C_{i+1}^t)$$
 | $C_{i-1}^t C_i^t C_{i+1}^t$ | 111 | 110 | 101 | 100 | 011 | 010 | 001 | 000 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **$C_i^{t+1}$** | **0** | **0** | **0** | **1** | **1** | **1** | **1** | **0** |
+
+---
 
 ## Mathematical Overview: Monte Carlo Methods
 
