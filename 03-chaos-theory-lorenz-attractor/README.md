@@ -1,4 +1,4 @@
-# # 03. Chaos Theory & Lorenz Attractor
+# 03. Chaos Theory & Lorenz Attractor
 
 ## Overview
 This module explores **deterministic chaos**, dynamical systems, and non-linear ordinary differential equations (ODEs) through numerical simulation of Edward Lorenz's 1963 atmospheric convection model. Three core analyses are implemented:

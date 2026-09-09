@@ -93,3 +93,28 @@ To evaluate the **Butterfly Effect**, two trajectories $A(t)$ and $B(t)$ are int
 $$D(t) = \sqrt{(x_A - x_B)^2 + (y_A - y_B)^2 + (z_A - z_B)^2}$$
 
 Positive Lyapunov exponents cause exponential spatial separation over time, illustrating the fundamental unpredictability of deterministic chaotic systems.
+
+---
+
+## Mathematical Overview: Fourier Transform & Signal Processing
+
+The Fourier Transform decomposes arbitrary time-domain signals into their constituent orthogonal frequency components, mapping spatial or temporal data into the frequency domain.
+
+### Signal Denoising & Spectral Filtering (`fourier_denoising.py`)
+Discrete time series signals $x_k$ are transformed via Discrete Fourier Transform (DFT):
+
+$$X_k = \sum_{n=0}^{N-1} x_n e^{-i 2\pi \frac{k n}{N}}$$
+
+Stochastic background noise is filtered by applying a power threshold to the Power Spectral Density ($PSD = \frac{|X_k|^2}{N}$). The clean signal is reconstructed using the Inverse Fast Fourier Transform (IFFT).
+
+### Time-Frequency Spectrogram (`audio_spectrogram.py`)
+To analyze non-stationary signals with time-varying frequencies, Short-Time Fourier Transform (STFT) computes spectral power over sliding windowed segments:
+
+$$STFT\{x[n]\}(m, \omega) = \sum_{n=-\infty}^{\infty} x[n] w[n - m] e^{-i \omega n}$$
+
+### 2D Curve Reconstruction via Epicycles (`fourier_epicycles.py`)
+Closed 2D parametric curves $z(t) = x(t) + i \cdot y(t)$ are modeled using complex Fourier series. Summing $K$ dominant harmonic vectors (rotating epicycles) reconstructs continuous spatial geometry:
+
+$$z(t) \approx \sum_{n=-K}^{K} c_n e^{i \frac{2\pi n t}{T}}$$
+
+---
