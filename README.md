@@ -25,7 +25,7 @@ The primary goal of these projects is to bridge theoretical mathematical concept
 
 * **Folder:** ['/04-fourier-transform-signal-processing'](./04-fourier-transform-signal-processing)
 * **Topics:** Harmonic Analysis, Fast Fourier Transform (FFT), Short-Time Fourier Transform (STFT), Complex Fourier Series.
-* **Tech Stack:** Python 3, NumPy, SciPy, Matplotlib.
+* **Tech Stack:** `Python 3`, `NumPy`, `Matplotlib`.
 * **Summary:** Application of spectral techniques for signal processing. Includes signal denoising via threshold filtering, time-frequency spectrogram visualization of chirp signals, and 2D parametric curve reconstruction using complex epicycles.
 
 ---
