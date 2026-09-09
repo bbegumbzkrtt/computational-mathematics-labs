@@ -21,6 +21,13 @@ The primary goal of these projects is to bridge theoretical mathematical concept
 * **Tech Stack:** `Python 3`, `NumPy`, `Matplotlib`.
 * **Summary:** Simulation of Edward Lorenz's 3D non-linear atmospheric convection model. Demonstrates deterministic chaos and sensitive dependence on initial conditions (Butterfly Effect) using first-order numerical integration.
 
+### 04. Fourier Transform & Signal Processing
+
+* **Folder:** `/04-fourier-transform-signal-processing`
+* **Topics:** Harmonic Analysis, Fast Fourier Transform (FFT), Short-Time Fourier Transform (STFT), Complex Fourier Series.
+* **Tech Stack:** Python 3, NumPy, SciPy, Matplotlib.
+* **Summary:** Application of spectral techniques for signal processing. Includes signal denoising via threshold filtering, time-frequency spectrogram visualization of chirp signals, and 2D parametric curve reconstruction using complex epicycles.
+
 ---
 
 ## Mathematical Overview: Rule 30
