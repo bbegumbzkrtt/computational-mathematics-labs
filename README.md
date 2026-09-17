@@ -30,9 +30,9 @@ The primary goal of these projects is to bridge theoretical mathematical concept
 
 ### 05. Linear Algebra & Matrix Decompositions
 
-* **Folder:** [`/05-linear-algebra-matrix-decompositions`](./05-linear-algebra-matrix-decompositions)
+* **Folder:** ['/05-linear-algebra-matrix-decompositions'](./05-linear-algebra-matrix-decompositions)
 * **Topics:** Singular Value Decomposition (SVD), Low-Rank Approximations, Eigenvalues & Eigenvectors, Markov Chains, Power Iteration.
-* **Tech Stack:** Python 3, NumPy, Matplotlib.
+* **Tech Stack:** `Python 3`, `NumPy`, `Matplotlib`.
 * **Summary:** Bridge between theoretical linear algebra and computational applications. Features image compression via rank-k SVD truncation, geometric vector transformation mappings in 2D space, and Google PageRank web centrality analysis using Power Iteration.
 ---
 
@@ -131,14 +131,13 @@ Closed 2D parametric curves $z(t) = x(t) + i \cdot y(t)$ are modeled using compl
 $$z(t) \approx \sum_{n=-K}^{K} c_n e^{i \frac{2\pi n t}{T}}$$
 
 ---
-<<<<<<< HEAD
 
 ## Mathematical Overview: Linear Algebra & Matrix Decompositions
 
 Matrix decompositions and spectral theories map abstract vector spaces into tangible computational structures, underpinning modern data science, compression, and search engine architecture.
 
 ### Image Compression via SVD (`svd_image_compression.py`)
-By the Eckart-Young-Mirsky theorem, truncating the Singular Value Decomposition $A = U \Sigma V^T$ to the top $k$ singular values yields the optimal rank-$k$ matrix approximation:
+By the Eckart-Young-Mirsky theorem, truncating the Singular Value Decomposition $A = U \Sigma V^T$ to the top $k$ singular values yields the optimal rank-k matrix approximation:
 
 $$A_k = \sum_{i=1}^{k} \sigma_i u_i v_i^T$$
 
@@ -149,5 +148,5 @@ Eigenvectors $v$ define invariant axes during linear transformations $A v = \lam
 The equilibrium probability vector $v$ of a random web walker on a stochastic transition matrix $M = d P + \frac{1-d}{N}\mathbf{E}$ corresponds to the stationary state eigenvector for $\lambda = 1$:
 
 $$M v = 1 \cdot v$$
-=======
->>>>>>> 0e15ac8856de7179dfa154696ae293357b874dbc
+
+---
