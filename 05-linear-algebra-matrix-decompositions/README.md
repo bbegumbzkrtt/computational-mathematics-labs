@@ -9,14 +9,14 @@ This module explores **matrix factorizations**, **eigenvalue spectral analysis**
 
 ---
 
-## ## 1. Image Compression via SVD (`svd_image_compression.py`)
+## 1. Image Compression via SVD (`svd_image_compression.py`)
 
 ### Mathematical Principle
 According to the **Eckart-Young-Mirsky Theorem**, any matrix $A \in \mathbb{R}^{m \times n}$ can be decomposed into orthogonal singular vectors and singular values:
 
 $$A = U \Sigma V^T = \sum_{i=1}^{r} \sigma_i u_i v_i^T$$
 
-Truncating the summation to the $k$ dominant singular values yields the optimal rank-$k$ low-rank approximation:
+Truncating the summation to the $k$ dominant singular values yields the optimal rank-k low-rank approximation:
 
 $$A_k = \sum_{i=1}^{k} \sigma_i u_i v_i^T$$
 
@@ -35,7 +35,7 @@ $$\text{Error} = \frac{\Vert{}A - A_k\Vert{}_F}{\Vert{}A\Vert{}_F}$$
 
 ---
 
-## ## 2. Eigenvalue Geometric Transformations (`eigen_transformations.py`)
+## 2. Eigenvalue Geometric Transformations (`eigen_transformations.py`)
 
 ### Mathematical Principle
 Eigenvectors $v$ represent invariant spatial directions under linear transformations, scaled exclusively by their corresponding eigenvalue $\lambda$:
@@ -57,7 +57,7 @@ $$v_{\text{transformed}} = A v = \lambda v$$
 
 ---
 
-## ## 3. Google PageRank Simulation (`pagerank_simulation.py`)
+## 3. Google PageRank Simulation (`pagerank_simulation.py`)
 
 ### Mathematical Principle
 A web network is modeled as a column-stochastic transition matrix $P$. With a damping factor $d = 0.85$, the Google PageRank transition matrix $M$ is defined as:
