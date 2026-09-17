@@ -23,9 +23,9 @@ The primary goal of these projects is to bridge theoretical mathematical concept
 
 ### 04. Fourier Transform & Signal Processing
 
-* **Folder:** `/04-fourier-transform-signal-processing`
+* **Folder:** ['/04-fourier-transform-signal-processing'](./04-fourier-transform-signal-processing)
 * **Topics:** Harmonic Analysis, Fast Fourier Transform (FFT), Short-Time Fourier Transform (STFT), Complex Fourier Series.
-* **Tech Stack:** Python 3, NumPy, SciPy, Matplotlib.
+* **Tech Stack:** `Python 3`, `NumPy`, `Matplotlib`.
 * **Summary:** Application of spectral techniques for signal processing. Includes signal denoising via threshold filtering, time-frequency spectrogram visualization of chirp signals, and 2D parametric curve reconstruction using complex epicycles.
 
 ### 05. Linear Algebra & Matrix Decompositions
@@ -131,6 +131,7 @@ Closed 2D parametric curves $z(t) = x(t) + i \cdot y(t)$ are modeled using compl
 $$z(t) \approx \sum_{n=-K}^{K} c_n e^{i \frac{2\pi n t}{T}}$$
 
 ---
+<<<<<<< HEAD
 
 ## Mathematical Overview: Linear Algebra & Matrix Decompositions
 
@@ -148,3 +149,5 @@ Eigenvectors $v$ define invariant axes during linear transformations $A v = \lam
 The equilibrium probability vector $v$ of a random web walker on a stochastic transition matrix $M = d P + \frac{1-d}{N}\mathbf{E}$ corresponds to the stationary state eigenvector for $\lambda = 1$:
 
 $$M v = 1 \cdot v$$
+=======
+>>>>>>> 0e15ac8856de7179dfa154696ae293357b874dbc
